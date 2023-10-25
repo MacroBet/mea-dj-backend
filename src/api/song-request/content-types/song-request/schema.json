@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "song_requests",
+  "info": {
+    "singularName": "song-request",
+    "pluralName": "song-requests",
+    "displayName": "SongRequest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "waiting",
+        "playing",
+        "played",
+        "discarded"
+      ],
+      "default": "waiting",
+      "required": true
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "party": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::party.party"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    },
+    "songId": {
+      "type": "string",
+      "required": true
+    },
+    "songName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
