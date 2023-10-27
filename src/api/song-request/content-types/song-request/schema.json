@@ -45,6 +45,9 @@
     "songName": {
       "type": "string",
       "required": true
+    },
+    "songAuthor": {
+      "type": "string"
     }
   }
 }

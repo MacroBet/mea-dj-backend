@@ -11,9 +11,11 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.15.0",
-    "@strapi/plugin-users-permissions": "4.15.0",
+    "@spotify/web-api-ts-sdk": "^1.1.2",
     "@strapi/plugin-i18n": "4.15.0",
+    "@strapi/plugin-users-permissions": "4.15.0",
+    "@strapi/strapi": "4.15.0",
+    "axios": "^1.5.1",
     "better-sqlite3": "8.6.0"
   },
   "author": {
