@@ -6,11 +6,7 @@ export default [
     config: {
       enabled: true,
       headers: "*",
-      origin: [
-        "http://localhost:1337",
-        "http://localhost:3000/",
-        "https://mea-dj.vercel.app/",
-      ],
+      origin: "*",
     },
   },
   "strapi::poweredBy",
