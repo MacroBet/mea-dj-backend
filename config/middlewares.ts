@@ -5,7 +5,7 @@ export default [
     name: "strapi::cors",
     config: {
       headers: "*",
-      origin: "*",
+      origin: ["*"],
     },
   },
   "strapi::poweredBy",
